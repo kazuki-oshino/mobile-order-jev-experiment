@@ -1,0 +1,101 @@
+{
+  "checkedAt": "2026-09-25T02:11:30.909Z",
+  "scope": "合成6例・各1回の実API確認。一般精度・UX効果は測定していない。",
+  "results": [
+    {
+      "name": "sparse",
+      "expected": "watch",
+      "actual": "watch",
+      "matched": true,
+      "topic": "sweetness",
+      "probabilities": {
+        "watch": 0.99,
+        "recommend": 0,
+        "ask": 0.01
+      },
+      "latency": 810,
+      "model": "jev-1.13.0",
+      "tokens": 12952,
+      "questions": 40
+    },
+    {
+      "name": "ask",
+      "expected": "ask",
+      "actual": "ask",
+      "matched": true,
+      "topic": "texture",
+      "probabilities": {
+        "watch": 0.07,
+        "ask": 0.93,
+        "recommend": 0
+      },
+      "latency": 776,
+      "model": "jev-1.13.0",
+      "tokens": 12974,
+      "questions": 40
+    },
+    {
+      "name": "compare",
+      "expected": "compare",
+      "actual": "compare",
+      "matched": true,
+      "topic": "texture",
+      "probabilities": {
+        "compare": 1,
+        "watch": 0,
+        "ask": 0,
+        "recommend": 0
+      },
+      "latency": 883,
+      "model": "jev-1.13.0",
+      "tokens": 13343,
+      "questions": 40
+    },
+    {
+      "name": "recommend",
+      "expected": "recommend",
+      "actual": "recommend",
+      "matched": true,
+      "topic": "texture",
+      "probabilities": {
+        "ask": 0.03,
+        "recommend": 0.95,
+        "watch": 0.02
+      },
+      "latency": 790,
+      "model": "jev-1.13.0",
+      "tokens": 12972,
+      "questions": 40
+    },
+    {
+      "name": "quiet",
+      "expected": "watch",
+      "actual": "watch",
+      "matched": true,
+      "topic": null,
+      "probabilities": {
+        "watch": 1
+      },
+      "latency": 768,
+      "model": "jev-1.13.0",
+      "tokens": 12674,
+      "questions": 39
+    },
+    {
+      "name": "answered",
+      "expected": "recommend",
+      "actual": "recommend",
+      "matched": true,
+      "topic": "sweetness",
+      "probabilities": {
+        "watch": 0.22,
+        "recommend": 0.64,
+        "ask": 0.14
+      },
+      "latency": 781,
+      "model": "jev-1.13.0",
+      "tokens": 12965,
+      "questions": 40
+    }
+  ]
+}
