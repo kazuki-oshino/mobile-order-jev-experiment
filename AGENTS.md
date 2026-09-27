@@ -13,7 +13,7 @@
 
 - TypeScript
 - Jev
-  - JEV_API_KEY を使用する
+  - TYPESAFE_API_KEY を使用する
 
 ## 作業言語
 

@@ -65,7 +65,7 @@ export async function evaluate(snapshot: Snapshot, signal: AbortSignal): Promise
   const started = performance.now();
   const response = await fetch('/jev/v1/systemone', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(buildRequest(snapshot)), signal });
   if (!response.ok) {
-    if ([401,403].includes(response.status)) throw new Error('認証できません。.env の JEV_API_KEY を確認してViteを再起動してください。');
+    if ([401,403].includes(response.status)) throw new Error('認証できません。.env の TYPESAFE_API_KEY を確認してViteを再起動してください。');
     if ([429,529].includes(response.status)) throw new Error('Jevが混み合っています。少し待ってから接客を再開してください。');
     throw new Error(`Jevへの接続に失敗しました（${response.status}）。`);
   }

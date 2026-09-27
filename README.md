@@ -15,7 +15,7 @@ This is a prototype. The bag works only in the browser; there is no ordering or 
 2. Create a `.env` file in the project root:
 
    ```env
-   JEV_API_KEY=your_key_here
+   TYPESAFE_API_KEY=your_key_here
    ```
 
 3. Start the app:
